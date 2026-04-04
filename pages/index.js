@@ -26,13 +26,13 @@ export default function Dashboard() {
   }, []);
 
   return (
-    <div style={{ padding: '40px', fontFamily: 'sans-serif', maxWidth: '800px', margin: '0 auto' }}>
-      <h1 style={{ textAlign: 'center', color: '#333' }}>RFID Smart Attendance Dashboard</h1>
+    <div style={{ padding: '40px', fontFamily: 'sans-serif', maxWidth: '800px', margin: '0 auto', color: '#fff' }}>
+      <h1 style={{ textAlign: 'center', color: '#fff' }}>RFID Smart Attendance Dashboard</h1>
       <div style={{ marginTop: '30px' }}>
         {attendanceLog.length === 0 ? (
-          <p style={{ textAlign: 'center', fontSize: '18px', color: '#666' }}>Waiting for student to tap card...</p>
+          <p style={{ textAlign: 'center', fontSize: '18px', color: '#ccc' }}>Waiting for student to tap card...</p>
         ) : (
-          <table border="1" cellPadding="15" style={{ width: '100%', textAlign: 'left', borderCollapse: 'collapse' }}>
+          <table border="1" cellPadding="15" style={{ width: '100%', textAlign: 'left', borderCollapse: 'collapse', color: '#000' }}>
             <thead>
               <tr style={{ background: '#0070f3', color: 'white' }}>
                 <th>Student Name</th>
@@ -44,8 +44,9 @@ export default function Dashboard() {
               {attendanceLog.map((log, index) => (
                 <tr key={index} style={{ background: index % 2 === 0 ? '#f9f9f9' : '#fff' }}>
                   <td style={{ color: 'green', fontWeight: 'bold', fontSize: '18px' }}>{log.name}</td>
-                  <td style={{ fontFamily: 'monospace' }}>{log.uid}</td>
-                  <td>{log.time}</td>
+                  {/* এখানে লেখার রঙ কালো করে দেওয়া হয়েছে */}
+                  <td style={{ fontFamily: 'monospace', color: '#333', fontWeight: 'bold' }}>{log.uid}</td>
+                  <td style={{ color: '#333', fontWeight: 'bold' }}>{log.time}</td>
                 </tr>
               ))}
             </tbody>

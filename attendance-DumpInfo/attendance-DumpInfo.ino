@@ -12,7 +12,7 @@
 MFRC522 rfid(SS_PIN, RST_PIN);
 
 // তোমার Vercel ওয়েবসাইটের API লিঙ্ক (পরে এটা পরিবর্তন করবে)
-const char* serverName = "https://your-project.vercel.app/api/attendance";
+const char* serverName = "https://attendance-app-oeht.vercel.app/api/attendance";
 
 void setup() {
   Serial.begin(115200);
