@@ -2,9 +2,11 @@
 const studentsDB = {
   "B417AB04": { name: "Gautam Pal", status: "Present" },
   "ADABD505": { name: "Student 2 (Keychain)", status: "Present" }
+  "04A1311AE31094": { name: "Student 3 (Keychain)", status: "Present" }
+  "513F8321": { name: "Student 3 (Keychain)", status: "Present" }
 };
 
-let latestAttendance = null;
+let latestAttendance = null;77
 
 export default function handler(req, res) {
   if (req.method === 'POST') {
