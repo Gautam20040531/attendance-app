@@ -1,9 +1,11 @@
 // pages/api/attendance.js
 const studentsDB = {
   "B417AB04": { name: "Gautam Pal", status: "Present" },
-  "ADABD505": { name: "Student 2 (Keychain 1)", status: "Present" }
-  "04A1311AE31094": { name: "Student 3 (Keychain 2)", status: "Present" }
-  "513F8321": { name: "Student 4 (Keychain 3)", status: "Present" }
+  "ADABD505": { name: "Student 2 (Keychain)", status: "Present" },
+  
+  // নিচে নতুন কার্ড দুটো অ্যাড করা হলো
+  "04A1311AE31094": { name: "Student 3 (New Card)", status: "Present" },
+  "513F8321": { name: "Student 4 (New Card)", status: "Present" }
 };
 
 let latestAttendance = null;77
